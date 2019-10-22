@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', async function (req, res, next) {
   try {
-    res.send('success');
+    res.json({success : 'Authenticated'});
   } catch (err) {
     console.error(err);
   }
